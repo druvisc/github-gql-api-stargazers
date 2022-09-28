@@ -1,0 +1,94 @@
+{
+  "data": {
+    "search": {
+      "pageInfo": {
+        "endCursor": "Y3Vyc29yOjEw",
+        "hasNextPage": true,
+        "__typename": "PageInfo"
+      },
+      "nodes": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMDI3MDI1MA==",
+          "nameWithOwner": "facebook/react",
+          "url": "https://github.com/facebook/react",
+          "stargazerCount": 195365,
+          "forkCount": 40449,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzU3ODYwOTM=",
+          "nameWithOwner": "typescript-cheatsheets/react",
+          "url": "https://github.com/typescript-cheatsheets/react",
+          "stargazerCount": 36675,
+          "forkCount": 3208,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk3NTM5NjU3NQ==",
+          "nameWithOwner": "duxianwei520/react",
+          "url": "https://github.com/duxianwei520/react",
+          "stargazerCount": 4652,
+          "forkCount": 1682,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk5MDc1OTkzMA==",
+          "nameWithOwner": "discountry/react",
+          "url": "https://github.com/discountry/react",
+          "stargazerCount": 1127,
+          "forkCount": 541,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk3NzUxMzQxOQ==",
+          "nameWithOwner": "react-redux-antd-es6/react",
+          "url": "https://github.com/react-redux-antd-es6/react",
+          "stargazerCount": 981,
+          "forkCount": 460,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMjE4MTQyMTA=",
+          "nameWithOwner": "primer/react",
+          "url": "https://github.com/primer/react",
+          "stargazerCount": 1982,
+          "forkCount": 329,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk3MjYyODI4NQ==",
+          "nameWithOwner": "Cathy0807/react",
+          "url": "https://github.com/Cathy0807/react",
+          "stargazerCount": 782,
+          "forkCount": 432,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk5MzUwMzU0NQ==",
+          "nameWithOwner": "HackYourFuture/React",
+          "url": "https://github.com/HackYourFuture/React",
+          "stargazerCount": 217,
+          "forkCount": 541,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk3MDEwNzc4Ng==",
+          "nameWithOwner": "vercel/next.js",
+          "url": "https://github.com/vercel/next.js",
+          "stargazerCount": 93192,
+          "forkCount": 20430,
+          "__typename": "Repository"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk0MzAyOTI5Ng==",
+          "nameWithOwner": "formio/react",
+          "url": "https://github.com/formio/react",
+          "stargazerCount": 212,
+          "forkCount": 175,
+          "__typename": "Repository"
+        }
+      ],
+      "__typename": "SearchResultItemConnection"
+    }
+  }
+}
