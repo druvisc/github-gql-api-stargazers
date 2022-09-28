@@ -56,7 +56,11 @@ function RepositorySearch() {
         GitHub repository search (GraphQL API v4)
       </Typography.Title>
 
-      <Input.Search defaultValue={DEFAULT_SEARCH} onSearch={onSearch} />
+      <Input.Search
+        name="repositorySearch"
+        defaultValue={DEFAULT_SEARCH}
+        onSearch={onSearch}
+      />
 
       {repositories.length ? (
         <>
@@ -65,7 +69,7 @@ function RepositorySearch() {
           {(loading || data?.search.pageInfo.hasNextPage) && (
             <Row justify="center">
               <Col>
-                <Button disabled={loading} onClick={onLoadMore}>
+                <Button name="repositorySearchLoadMore" disabled={loading} onClick={onLoadMore}>
                   Load more
                 </Button>
               </Col>

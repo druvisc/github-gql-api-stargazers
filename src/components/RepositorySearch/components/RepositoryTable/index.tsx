@@ -40,6 +40,7 @@ type Props = {
 function RepositoryTable({ repositories }: Props) {
   return (
     <Table
+      id="repositoryTable"
       rowKey="id"
       columns={columns}
       dataSource={repositories}
