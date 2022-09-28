@@ -10,6 +10,7 @@ export interface SearchRepositoriesQueryResponse {
   search: {
     pageInfo: {
       endCursor: string;
+      hasNextPage: boolean;
     };
     nodes: Repository[];
   };

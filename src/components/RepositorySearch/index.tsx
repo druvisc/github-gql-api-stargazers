@@ -62,11 +62,15 @@ function RepositorySearch() {
         <>
           <RepositoryTable repositories={repositories} />
 
-          <Row justify="center">
-            <Col>
-              <Button onClick={onLoadMore}>Load more</Button>
-            </Col>
-          </Row>
+          {(loading || data?.search.pageInfo.hasNextPage) && (
+            <Row justify="center">
+              <Col>
+                <Button disabled={loading} onClick={onLoadMore}>
+                  Load more
+                </Button>
+              </Col>
+            </Row>
+          )}
         </>
       ) : (
         <Row justify="center">

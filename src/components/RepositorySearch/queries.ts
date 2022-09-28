@@ -8,6 +8,7 @@ export const SEARCH_REPOSITORIES_QUERY = gql`
     search(query: $query, type: ${SEARCH_TYPE}, first: ${RESULTS_PER_PAGE}, after: $after) {
       pageInfo {
         endCursor
+        hasNextPage
       }
       nodes {
         ... on Repository {
