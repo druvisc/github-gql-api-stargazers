@@ -1,4 +1,4 @@
-import { Button, Col, Row, Space, Table } from "antd";
+import { Button, Table } from "antd";
 import { ColumnsType } from "antd/lib/table";
 import { Repository } from "../../types";
 
@@ -35,25 +35,16 @@ const columns: ColumnsType<Repository> = [
 
 type Props = {
   repositories: Repository[];
-  onLoadMore: () => void;
 };
 
-function RepositoryTable({ repositories, onLoadMore }: Props) {
+function RepositoryTable({ repositories }: Props) {
   return (
-    <Space direction="vertical" size="large" style={{ width: "100%" }}>
-      <Table
-        rowKey="id"
-        columns={columns}
-        dataSource={repositories}
-        pagination={false}
-      />
-
-      <Row justify="center">
-        <Col>
-          <Button onClick={onLoadMore}>Load more</Button>
-        </Col>
-      </Row>
-    </Space>
+    <Table
+      rowKey="id"
+      columns={columns}
+      dataSource={repositories}
+      pagination={false}
+    />
   );
 }
 

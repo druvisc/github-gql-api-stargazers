@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { Col, Input, Row, Space, Typography } from "antd";
+import { Button, Col, Input, Row, Space, Typography } from "antd";
 
 import { Repository, SearchRepositoriesQueryResponse } from "./types";
 import { SEARCH_REPOSITORIES_QUERY } from "./queries";
@@ -59,7 +59,15 @@ function RepositorySearch() {
       <Input.Search defaultValue={DEFAULT_SEARCH} onSearch={onSearch} />
 
       {repositories.length ? (
-        <RepositoryTable repositories={repositories} onLoadMore={onLoadMore} />
+        <>
+          <RepositoryTable repositories={repositories} />
+
+          <Row justify="center">
+            <Col>
+              <Button onClick={onLoadMore}>Load more</Button>
+            </Col>
+          </Row>
+        </>
       ) : (
         <Row justify="center">
           <Col>
